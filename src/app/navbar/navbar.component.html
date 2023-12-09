@@ -1,0 +1,15 @@
+<div class="nav-bar-container d-flex flex-row bg-yellow py-2">
+    <a class="ms-3 font-nav-title" routerLink="">EZ MANAGEMENT</a>
+    <a class="font-nav-link ms-5 align-self-center p-1 px-2 rounded-3"  
+        [ngClass]="{
+            'text-white': inShop,
+            'bg-blue': inShop
+        }"
+        routerLink="">Shop</a>
+    <a class="font-nav-link ms-4 align-self-center p-1 px-2 rounded-3" 
+        [ngClass]="{
+            'text-white': inReceipt,
+            'bg-blue': inReceipt
+        }"
+    routerLink="/receipt">Receipt</a>
+</div>
